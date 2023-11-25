@@ -1,8 +1,15 @@
-misal e iki tugas 1 sampek 5 wes mok isi kan... ngko gantinen dewe isine jawaban e yaaaa
+def hitung_pangkat(bilangan, eksponen):
+    return bilangan ** eksponen
 
+def main():
+    try:
+        bilangan = float(input("Masukkan bilangan: "))
+        eksponen = int(input("Masukkan eksponen: "))
+        
+        hasil = hitung_pangkat(bilangan, eksponen)
+        print(f"{bilangan}^{eksponen} = {hasil}")
+    except ValueError:
+        print("Masukkan bilangan sebagai angka dan eksponen sebagai bilangan bulat.")
 
-klik menu sing enek ongkone terus klik + nek tulisan changes
-
-kan wes pindah dari changes ke staged changes
-
-terus isi pesan terus klik commit
+if __name__ == "__main__":
+    main()
